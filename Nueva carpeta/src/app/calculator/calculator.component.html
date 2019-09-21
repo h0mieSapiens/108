@@ -1,0 +1,18 @@
+<div>
+
+  <label>Number 1:</label>
+  <input type="number" [(ngModel)]="firstnum" name="num1">
+  <br>
+  <label>Number 2:</label>
+  <input type="number"[(ngModel)]="secnum" name="num2">
+
+  <button (cilck)="sum();">+</button>
+  <button (click)="res();">-</button>
+  <button (clicl)="mult();">*</button>
+  <button (click)="div();">/</button>
+<br>
+  <label>Result:</label>
+  <input type="number" readonly="true" [(ngModel)]="result">
+  <br>
+
+</div>

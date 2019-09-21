@@ -1,0 +1,12 @@
+<div>
+  <ul class="menu">
+    <li><a routerLink="/">Home</a></li>
+    <li>Contact</li>
+    <li><a routerLink="/about">About</a></li>
+    <li><a *ngIf="getLoggedState==False" routerLink="/user/login">login</a></li>
+    <li><a *ngIf="getLoggedState()" routerLink="/user/register">Register</a></li>
+    <li><a routerLink="/user/list">User List</a></li>
+  </ul>
+
+  <button (click)="test();">click me!</button>
+</div>
